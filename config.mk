@@ -4,19 +4,19 @@
 # 06/2019
 
 # Cube file name without .ioc extension
-PROJECT_NAME = stm32_project_template
+PROJECT_NAME = raiju
 VERSION := 1
 
 TARGET_BOARD := target_$(PROJECT_NAME)_$(VERSION)
 
-DEVICE_FAMILY  := STM32F3xx
-DEVICE_TYPE    := STM32F303xx
-DEVICE_DEF     := STM32F303xE
-DEVICE         := STM32F303RE
+DEVICE_FAMILY  := STM32WBxx
+DEVICE_TYPE    := STM32WB5xx
+DEVICE_DEF     := STM32WB55xx
+DEVICE         := STM32WB55RGV
 
 # Linker script file without .ld extension
 # Find it on cube folder after code generation
-DEVICE_LD_FILE := STM32F303RETx_FLASH
+DEVICE_LD_FILE := stm32wb55xx_flash_cm4
 
 # Lib dir
 LIB_DIR  := lib
