@@ -21,4 +21,17 @@
         "files.trimTrailingWhitespace": false,
         "files.trimFinalNewlines": false,
     },
+    "files.associations": {
+        ".envrc": "dotenv",
+        "config": "properties",
+        "*.rasi": "css",
+        "tim.h": "c",
+        "motors.h": "c",
+        "utils.h": "c",
+        "debug.h": "c",
+        "distance.h": "c",
+        "leds.h": "c",
+        "dma.h": "c",
+        "line.h": "c"
+    },
 }
