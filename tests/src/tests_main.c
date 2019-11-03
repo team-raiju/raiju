@@ -9,6 +9,7 @@
 #include "leds.h"
 #include "radio.h"
 #include "line.h"
+#include "buzzer.h"
 #include "motors.h"
 #include "debug.h"
 
@@ -30,14 +31,22 @@ int main(void) {
     debug_println("[INIT] Initializing line sensors");
     line_sensors_init();
 
-    // debug_println("[MOTORS] Testing Motors");
-    // test_motors();
+    debug_println("[INIT] Initializing buzzer");
+    buzzer_init();
 
-    // debug_println("[DISTANCE] Testing distance sensors");
-    // test_distance_sensors();
+#if 0
+    debug_println("[MOTORS] Testing Motors");
+    test_motors();
+
+    debug_println("[DISTANCE] Testing distance sensors");
+    test_distance_sensors();
 
     debug_println("[LINE] Testing line sensors");
     test_line_sensors();
+#endif
+
+    debug_println("[BUZZER] Testing buzzers");
+    test_buzzer();
 
     led1_off();
     led2_off();

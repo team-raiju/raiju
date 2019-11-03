@@ -32,6 +32,10 @@
         "distance.h": "c",
         "leds.h": "c",
         "dma.h": "c",
-        "line.h": "c"
+        "line.h": "c",
+        "buzzer.h": "c",
+        "stdio.h": "c",
+        "stdbool.h": "c",
+        "gpio.h": "c"
     },
 }

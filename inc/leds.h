@@ -25,4 +25,6 @@ void led4_off(void);
 
 void led4_toggle(void);
 
+void led_gauge(uint32_t level);
+
 #endif // __LEDS_H__
