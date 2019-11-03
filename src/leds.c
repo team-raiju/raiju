@@ -77,3 +77,49 @@ void led_gauge(uint32_t level) {
         led4_on();
     }
 }
+
+void led_n(uint8_t n) {
+    n++;
+
+    if (n == 1) {
+        led1_on();
+        led2_off();
+        led3_off();
+    }
+
+    if (n == 2) {
+        led1_off();
+        led2_on();
+        led3_off();
+    }
+
+    if (n == 3) {
+        led1_off();
+        led2_off();
+        led3_on();
+    }
+
+    if (n == 4) {
+        led1_on();
+        led2_off();
+        led3_on();
+    }
+
+    if (n == 5) {
+        led1_off();
+        led2_on();
+        led3_on();
+    }
+
+    if (n == 6) {
+        led1_on();
+        led2_on();
+        led3_on();
+    }
+
+    if (n >= 7) {
+        led1_off();
+        led2_off();
+        led3_off();
+    }
+}

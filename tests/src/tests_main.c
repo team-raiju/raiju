@@ -28,25 +28,21 @@ int main(void) {
     debug_println("[INIT] Initializing radio");
     radio_init();
 
+#if 1
     debug_println("[INIT] Initializing line sensors");
     line_sensors_init();
+#endif
 
     debug_println("[INIT] Initializing buzzer");
     buzzer_init();
 
 #if 0
-    debug_println("[MOTORS] Testing Motors");
+    test_buzzer();
     test_motors();
-
-    debug_println("[DISTANCE] Testing distance sensors");
-    test_distance_sensors();
-
-    debug_println("[LINE] Testing line sensors");
+    test_radio();
     test_line_sensors();
 #endif
-
-    debug_println("[BUZZER] Testing buzzers");
-    test_buzzer();
+    test_distance_sensors();
 
     led1_off();
     led2_off();

@@ -71,6 +71,8 @@ void line_sensors_init() {
 }
 
 uint32_t line_sensor_get(line_sensor_position_t pos) {
+    line_sensors.readings[REAR_LEFT] = 4096;
+
     return line_sensors.readings[(int) pos];
 }
 

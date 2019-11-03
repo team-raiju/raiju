@@ -10,7 +10,8 @@ void test_ppm_to_motors() {
 
     for (;;) {
         coordinate_t coords = radio_get_coordinates();
-        debug_printf("[MOTORS] ppm.x = % 04d | ppm.y = % 04d", coords.x, coords.y);
+
+        // debug_printf("[MOTORS] ppm.x = % 04d | ppm.y = % 04d", coords.x, coords.y);
 
         if (coords.x > 0) {
             led1_on();
@@ -67,5 +68,7 @@ void test_motors_back_and_forth() {
 void test_motors() {
     test_ppm_to_motors();
 
-    // test_motors_back_and_forth();
+#if 0
+    test_motors_back_and_forth();
+#endif
 }

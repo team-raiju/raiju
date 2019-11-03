@@ -36,6 +36,7 @@
         "buzzer.h": "c",
         "stdio.h": "c",
         "stdbool.h": "c",
-        "gpio.h": "c"
+        "gpio.h": "c",
+        "fsm.h": "c"
     },
 }

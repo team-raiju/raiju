@@ -15,10 +15,9 @@
 
 extern char __debug_buffer[128];
 
-#define debug_printf(...) do {                                         \
-        snprintf(__debug_buffer, sizeof(__debug_buffer), __VA_ARGS__); \
-        debug_println(__debug_buffer);                                 \
-} while (0)                                                            \
+#define debug_printf(...)                                          \
+    snprintf(__debug_buffer, sizeof(__debug_buffer), __VA_ARGS__); \
+    debug_println(__debug_buffer)                                  \
 
 #else
 #define debug_printf(...)
